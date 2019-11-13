@@ -9,6 +9,7 @@
 import SwiftUI
 
 @available(OSX 10.15, *)
+@available(iOS 13.0, *)
 struct WeekdaysView: View {
     let weekdays = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"]
     let colors = Colors()

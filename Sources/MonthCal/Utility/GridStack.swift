@@ -9,6 +9,7 @@
 import SwiftUI
 
 @available(OSX 10.15, *)
+@available(iOS 13.0, *)
 struct GridStack<Content: View>: View {
     
     let rows: Int

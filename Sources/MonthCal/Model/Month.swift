@@ -9,6 +9,7 @@
 import Foundation
 
 @available(OSX 10.15, *)
+@available(iOS 13.0, *)
 struct Month {
     
     private let calendar = Calendar.current
