@@ -1,3 +1,28 @@
 # MonthCal
+**A SwiftUI Calendar Generator for IOS**
 
-A description of this package.
+## Features:
+- Supply starting date
+- Select months to display
+- Disabled, Enabled, Selected date states
+- Color control
+- Dark Mode Support
+
+## Photos
+
+
+## Installation
+- Requires IOS 13.0+ / Xcode 11+ / Swift 5.1+
+
+### Option 1
+- Copy Month Cal source files into your xcode project
+
+### Option 2
+- Add via Swift Package Manager
+
+### Configure
+- To customize the colors used, edit colors listed in the `Colors.swift` file
+
+
+## License
+- MonthCal is available under the MIT license.  See the `LICENSE` file for more info.
