@@ -4,12 +4,13 @@
 ## Features:
 - Supply starting date
 - Select months to display
-- Disabled, Enabled, Selected date states
+- Disabled, Enabled, Selected, Today day states
 - Color control
 - Dark Mode Support
 
 ## Photos
-
+![Light](Images/Light.png)
+![Dark](Images/Dark.png)
 
 ## Installation
 - Requires IOS 13.0+ / Xcode 11+ / Swift 5.1+
@@ -23,6 +24,9 @@
 ### Configure
 - To customize the colors used, edit colors listed in the `Colors.swift` file
 
-
 ## License
 - MonthCal is available under the MIT license.  See the `LICENSE` file for more info.
+
+## Shoutouts
+- Paul Hudson - [@twostraws](https://twitter.com/twostraws) - https://www.hackingwithswift.com/100/swiftui
+- RaffiKian - https://github.com/RaffiKian/RKCalendar - Inspiration 
