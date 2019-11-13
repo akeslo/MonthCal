@@ -24,6 +24,19 @@
 ### Configure
 - To customize the colors used, edit colors listed in the `Colors.swift` file
 
+### Usage
+- Show calendar with a start date and amount of months to display
+```
+Import MonthCal
+CalendarView(start: Date(), monthsToShow: 6)
+```
+
+- Disable ability for dates to be selected
+```
+Import MonthCal
+CalendarView(start: Date(), monthsToShow: 6, daysSelectable: false)
+```
+
 ## License
 - MonthCal is available under the MIT license.  See the `LICENSE` file for more info.
 

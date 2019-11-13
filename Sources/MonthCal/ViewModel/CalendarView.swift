@@ -17,9 +17,11 @@ public struct CalendarView: View {
     var selectableDays = true
 	
 
-    public init(start: Date, monthsToShow: Int) {
+    public init(start: Date, monthsToShow: Int, daysSelectable: Bool = true) {
 	self.startDate = start
 	self.monthsToDisplay = monthsToShow
+    self.selectableDays = daysSelectable
+        
     }
 
     public var body: some View {
