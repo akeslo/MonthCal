@@ -10,13 +10,19 @@ import SwiftUI
 
 @available(OSX 10.15, *)
 @available(iOS 13.0, *)
-struct CalendarView: View {
+public struct CalendarView: View {
 
     let startDate: Date
     let monthsToDisplay: Int
     var selectableDays = true
+	
 
-    var body: some View {
+    public init(start: Date, monthsToShow: Int) {
+	self.startDate = start
+	self.monthsToDisplay = monthsToShow
+    }
+
+    public var body: some View {
         VStack {
             WeekdaysView()
             ScrollView {
@@ -44,6 +50,6 @@ struct CalendarView: View {
 @available(iOS 13.0, *)
 struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarView(startDate: Date(), monthsToDisplay: 2)
+        CalendarView(start: Date(), monthsToShow: 2)
     }
 }
