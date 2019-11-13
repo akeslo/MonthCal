@@ -13,7 +13,7 @@ import SwiftUI
 struct WeekdaysView: View {
     let weekdays = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"]
     let colors = Colors()
-    
+
     var body: some View {
         HStack {
             GridStack(rows: 1, columns: 7) { row, col in
@@ -24,6 +24,7 @@ struct WeekdaysView: View {
 }
 
 @available(OSX 10.15, *)
+@available(iOS 13.0, *)
 struct WeekdaysView_Previews: PreviewProvider {
     static var previews: some View {
         WeekdaysView()

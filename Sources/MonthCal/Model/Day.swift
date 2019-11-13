@@ -12,7 +12,7 @@ import SwiftUI
 @available(OSX 10.15, *)
 @available(iOS 13.0, *)
 class Day: ObservableObject {
-    
+
     @Published var isSelected = false
 
     var selectableDays: Bool
@@ -40,12 +40,12 @@ class Day: ObservableObject {
             return colors.backgroundColor
         }
     }
-    
+
     init(date: Date, today: Bool = false, disable: Bool = false, selectable: Bool = true) {
         dayDate = date
         isToday = today
         disabled = disable
         selectableDays = selectable
     }
-    
+
 }

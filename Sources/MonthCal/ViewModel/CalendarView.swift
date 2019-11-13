@@ -11,11 +11,11 @@ import SwiftUI
 @available(OSX 10.15, *)
 @available(iOS 13.0, *)
 struct CalendarView: View {
-    
+
     let startDate: Date
     let monthsToDisplay: Int
     var selectableDays = true
-    
+
     var body: some View {
         VStack {
             WeekdaysView()
@@ -29,18 +29,19 @@ struct CalendarView: View {
             }
         }
     }
-    
+
     func nextMonth(currentMonth: Date, add: Int) -> Date {
         var components = DateComponents()
         components.month = add
         let next = Calendar.current.date(byAdding: components, to: currentMonth)!
         return next
     }
-    
+
 
 }
 
 @available(OSX 10.15, *)
+@available(iOS 13.0, *)
 struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
         CalendarView(startDate: Date(), monthsToDisplay: 2)

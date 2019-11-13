@@ -11,9 +11,9 @@ import SwiftUI
 @available(OSX 10.15, *)
 @available(iOS 13.0, *)
 struct DayCellView: View {
-    
+
     @ObservedObject var day: Day
-    
+
     var body: some View {
         Text(day.dayName).frame(width: 32, height: 32)
             .foregroundColor(day.textColor)
@@ -29,6 +29,7 @@ struct DayCellView: View {
 }
 
 @available(OSX 10.15, *)
+@available(iOS 13.0, *)
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
         DayCellView(day: Day(date: Date()))
