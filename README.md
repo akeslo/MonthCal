@@ -16,7 +16,7 @@
 - Requires IOS 13.0+ / Xcode 11+ / Swift 5.1+
 
 ### Option 1
-- Copy `Sources/MonthCal` source files into your xcode project
+- Copy `Sources/MonthCal` files into your xcode project
 
 ### Option 2
 - Add via Swift Package Manager
